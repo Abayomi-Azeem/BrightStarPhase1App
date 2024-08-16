@@ -1,0 +1,39 @@
+@BrightStarPhase1App_HostAddress = http://localhost:5181/api
+
+POST {{BrightStarPhase1App_HostAddress}}/auth/login
+Content-Type: application/json
+
+{
+    "serviceId" : "3539714B-8299-4BC4-8FBF-0CACB1721FBB",
+    "password"  : "abayomi"
+}
+###
+
+POST {{BrightStarPhase1App_HostAddress}}/services/subscribe
+Content-Type: application/json
+
+{
+    "serviceId" : "3539714B-8299-4BC4-8FBF-0CACB1721FBB",
+    "tokenId"  : "f7dd21316c1140b6a80861f7ece7eef2",
+    "phoneNumber":"09011094976"
+}
+###
+
+POST {{BrightStarPhase1App_HostAddress}}/services/unsubscribe
+Content-Type: application/json
+
+{
+    "serviceId" : "3539714B-8299-4BC4-8FBF-0CACB1721FBB",
+    "tokenId"  : "f7dd21316c1140b6a80861f7ece7eef2",
+    "phoneNumber":"09011094976"
+}
+###
+
+POST {{BrightStarPhase1App_HostAddress}}/services/status
+Content-Type: application/json
+
+{
+    "serviceId" : "3539714B-8299-4BC4-8FBF-0CACB1721FBB",
+    "tokenId"  : "f7dd21316c1140b6a80861f7ece7eef2",
+    "phoneNumber":"09011094976"
+}
